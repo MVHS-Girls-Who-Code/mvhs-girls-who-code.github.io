@@ -17,13 +17,14 @@ body {
     overflow-x: hidden;
 }
 
-.row-officers, {
+.background-white{
     background-color: white;
 }
 
-.row-advisors{
-    background-color:  #e0f5f3;
+.background-teal, .background-teal div{
+    background-color: #e0f5f3;
 }
+
 
 .navbar-custom, .navbar-brand {
     background-color: #0d9c90;
@@ -37,10 +38,6 @@ body {
     margin: 10px;
     opacity: 1;
     width: 200px;
-}
-
-.adult_cards div{
-    background-color: #e0f5f3; 
 }
 
 .card {
@@ -75,6 +72,11 @@ body {
     font-size: 70px;
     padding-top: 150px;
     text-align: center;
+}
+
+.contact_text{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* index page */
