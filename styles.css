@@ -4,6 +4,7 @@
 
 p {
     font-size: 23px;
+    text-align: center;
 }
 
 h1 {
@@ -16,8 +17,14 @@ body {
     overflow-x: hidden;
 }
 
-.navbar-custom, .navbar-brand {
-    background-color: #0d9c90;
+.navbar-custom{
+    background-image: linear-gradient(to bottom right,#0d9c90, #E4BDAB);
+    font-family: 'Source Sans Pro';
+    font-size: 25px;
+}
+
+.navbar-brand{
+    background-image: none;
     font-family: 'Source Sans Pro';
     font-size: 25px;
 }
