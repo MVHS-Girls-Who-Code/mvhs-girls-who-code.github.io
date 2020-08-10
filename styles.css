@@ -17,20 +17,18 @@ body {
     overflow-x: hidden;
 }
 
-.navbar-custom{
-    background-image: linear-gradient(to bottom right,#0d9c90, #E4BDAB);
-    font-family: 'Source Sans Pro';
-    font-size: 25px;
+.row-officers, {
+    background-color: white;
 }
 
-.navbar-brand{
-    background-image: none;
-    font-family: 'Source Sans Pro';
-    font-size: 25px;
+.row-advisors{
+    background-color:  #e0f5f3;
 }
 
-.page {
-    background-color: #e0f5f3;
+.navbar-custom, .navbar-brand {
+    background-color: #0d9c90;
+    font-family: 'Source Sans Pro';
+    font-size: 25px;
 }
 
 .officer_image {
@@ -41,11 +39,14 @@ body {
     margin: 10px;
 }
 
+.adult_cards div{
+    background-color: #e0f5f3; 
+}
+
 .card {
     text-align: center;
     line-height: 1;
     margin: 10px auto 10px auto;
-    background-color: #e0f5f3;
     border: none;
 }
 
@@ -64,10 +65,9 @@ body {
 
 .banner {
     height: 400px;
-    background-image: url('Assets/Test Banners/banner3.png');
+    background-image: linear-gradient(to bottom right,#0d9c90, #f89196);
     width: 100%;
     height: 400px;
-    background-repeat: no-repeat;
 }
 
 .banner h1 {
