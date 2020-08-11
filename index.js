@@ -1,6 +1,6 @@
 //nav links load
 window.onload = function() {
-    var $nav = $('.home-nav');
+    var $nav = $('.nav');
     window.setTimeout(function() {
         $nav.removeClass('hidden');
         $nav.addClass('show');
