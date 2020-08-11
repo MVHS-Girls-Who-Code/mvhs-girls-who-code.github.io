@@ -31,6 +31,19 @@ body {
     height: 80px;
 }
 
+.contact-nav-logo{
+    border-radius: 10%;
+    width: 120px;
+    height: 60px;
+    padding-bottom: 5px;
+}
+
+.nav-brand{
+    padding-top: 14px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .officer_image {
     border-radius: 50%;
     height: 200px;
