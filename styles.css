@@ -32,10 +32,9 @@ body {
 }
 
 .contact-nav-logo{
-    border-radius: 10%;
+    border-radius: 5%;
     width: 120px;
-    height: 60px;
-    padding-bottom: 5px;
+    height: 55px;
 }
 
 .nav-brand{
