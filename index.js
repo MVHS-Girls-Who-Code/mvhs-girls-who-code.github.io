@@ -1,10 +1,23 @@
 //nav links load
 window.onload = function() {
-    var $nav = $('.nav');
-    window.setTimeout(function() {
-        $nav.removeClass('hidden');
-        $nav.addClass('show');
-    }, 500);
+    var sPath = window.location.pathname;
+    var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+    if (sPage == "index.html") {
+        var $nav = $('.nav');
+        window.setTimeout(function() {
+            $nav.removeClass('hidden');
+            $nav.addClass('show');
+        }, 500);
+    } else if (sPage == "contact.html") {
+        var $banner = $('.banner-img');
+        var $bannerText = $('.not-in-view-fade')
+        window.setTimeout(function() {
+            $banner.addClass('faded');
+            $bannerText.removeClass('not-in-view-fade');
+            $bannerText.addClass('in-view-fade');
+        }, 250);
+
+    }
 }
 
 //animations
