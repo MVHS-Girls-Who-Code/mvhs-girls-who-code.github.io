@@ -122,6 +122,10 @@ body {
     padding-top: 40px;
 }
 
+.blurb{
+    width: 200px;
+}
+
 /*nav bars*/
 
 .nav {
