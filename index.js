@@ -3,7 +3,7 @@ window.onload = function() {
     var sPath = window.location.pathname;
     var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
     if (sPage == "index.html") {
-        var $nav = $('.nav');
+        var $nav = $('.home-nav');
         window.setTimeout(function() {
             $nav.removeClass('hidden');
             $nav.addClass('show');
