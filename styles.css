@@ -86,9 +86,18 @@ body {
     width: 100vw;
     height: 425px;
     z-index: -1;
-    background: url("Assets/contactbanner.jpg");
     background-position: center;
     background-repeat: repeat;
+}
+
+.contact-banner {
+    background: url("Assets/contactbanner.jpg");
+    background-position: center;
+}
+
+.project-banner {
+    background: url("Assets/projectbanner.jpg");
+    background-position: center;
 }
 
 .banner h1 {
