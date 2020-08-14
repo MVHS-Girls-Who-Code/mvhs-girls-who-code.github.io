@@ -5,12 +5,16 @@
     text-align: center;
 }
 
-.background-white{
+.background-white, .background-white div{
     background-color: white;
 }
 
 .background-teal, .background-teal div{
     background-color: #e0f5f3;
+}
+
+.background-teal .background-light-teal, .background-teal .background-light-teal div{
+    background-color: #f1fdfb;
 }
 
 body {
@@ -54,7 +58,7 @@ body {
 
 /*tablet screen*/
 
-@media only screen and (max-width: 755px) and (min-width: 657px){
+@media only screen and (max-width: 800px) and (min-width: 657px){
     p {
         font-size: 20px;
     }
@@ -69,7 +73,7 @@ body {
 }
 
 /* small computers*/
-@media only screen and (max-width: 1200px) and (min-width: 755px){
+@media only screen and (max-width: 1200px) and (min-width: 800px){
     p {
         font-size: 20px;
     }
@@ -125,6 +129,8 @@ h1 {
     line-height: 1;
     margin: 10px auto 10px auto;
     text-align: center;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card img{
