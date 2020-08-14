@@ -1,19 +1,8 @@
+/*universal styling (no media queries)*/
+
 * {
     font-family: 'Source Sans Pro';
-}
-
-p {
-    font-size: 23px;
     text-align: center;
-}
-
-h1 {
-    font-size: 60px;
-    text-align: center;
-}
-
-body {
-    overflow-x: hidden;
 }
 
 .background-white{
@@ -24,37 +13,20 @@ body {
     background-color: #e0f5f3;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .contact-nav{
-    padding-top: 14px;
     background-color: #0d9c90;
-    height: 80px;
 }
 
 .contact-nav-logo{
     border-radius: 5%;
-    width: 120px;
-    height: 55px;
 }
 
-.nav-brand{
-    padding-top: 14px;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.officer_image {
+.officer-image{
     border-radius: 50%;
-    height: 200px;
-    margin: 10px;
-    opacity: 1;
-    width: 200px;
-}
-
-.card {
-    border: none;
-    line-height: 1;
-    margin: 10px auto 10px auto;
-    text-align: center;
 }
 
 .flex {
@@ -62,6 +34,102 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+/*phone screen*/
+
+@media only screen and (max-width: 657px) {
+    p {
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size: 57px;
+    }
+    
+    .card {
+        width: 80vw;
+    }
+}
+
+/*tablet screen*/
+
+@media only screen and (max-width: 755px) and (min-width: 657px){
+    p {
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size: 57px;
+    }
+    
+    .card {
+        width: 60vw;
+    }
+}
+
+/* small computers*/
+@media only screen and (max-width: 1200px) and (min-width: 755px){
+    p {
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size: 57px;
+    }
+    
+    .card {
+        width: 40vw;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    p {
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size: 57px;
+    }
+    
+    .card {
+        width: 500px;
+    }
+}
+
+p {
+    font-size: 23px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.contact-nav{
+    padding-top: 14px;
+    height: 80px;
+}
+
+.contact-nav-logo{
+    width: 120px;
+    height: 55px;
+}
+
+.officer-image {
+    height: 200px;
+    margin: 10px;
+    width: 200px;
+}
+
+.card {
+    line-height: 1;
+    margin: 10px auto 10px auto;
+    text-align: center;
+}
+
+.card img{
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .mentor_text {
@@ -111,10 +179,6 @@ body {
 .section{
     padding-bottom: 40px;
     padding-top: 40px;
-}
-
-.blurb{
-    width: 200px;
 }
 
 /*nav bars*/
