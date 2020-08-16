@@ -86,7 +86,8 @@ body {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -111,19 +112,24 @@ h1 {
 
 .card {
     line-height: 1;
-    margin: 10px auto 10px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.left{
+    margin-left: 320px;
+}
+
+.right{
+    margin-left: 60px;
+}
+
 .card img{
     margin-right: auto;
     margin-left: auto;
-}
-
-.title{
-    font-size: 20px;
 }
 
 .mentor_text {
@@ -186,6 +192,18 @@ h1 {
 
 .blurb{
     padding: 7px;
+}
+
+.blurb p{
+    font-size: 18.7px;
+    line-height: 1.1;
+}
+
+.card_grid{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: auto;
+    justify-items: start;
 }
 
 /*nav bars*/
