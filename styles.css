@@ -43,10 +43,6 @@ body {
 /*phone screen*/
 
 @media only screen and (max-width: 657px) {
-    p {
-        font-size: 18px;
-    }
-    
     h1 {
         font-size: 57px;
     }
@@ -58,11 +54,7 @@ body {
 
 /*tablet screen*/
 
-@media only screen and (max-width: 800px) and (min-width: 657px){
-    p {
-        font-size: 18px;
-    }
-    
+@media only screen and (max-width: 800px) and (min-width: 657px){  
     h1 {
         font-size: 57px;
     }
@@ -73,11 +65,7 @@ body {
 }
 
 /* small computers*/
-@media only screen and (max-width: 1200px) and (min-width: 800px){
-    p {
-        font-size: 18px;
-    }
-    
+@media only screen and (max-width: 1200px) and (min-width: 800px){   
     h1 {
         font-size: 57px;
     }
@@ -88,10 +76,6 @@ body {
 }
 
 @media only screen and (min-width: 1200px){
-    p {
-        font-size: 18px;
-    }
-    
     h1 {
         font-size: 57px;
     }
@@ -136,6 +120,10 @@ h1 {
 .card img{
     margin-right: auto;
     margin-left: auto;
+}
+
+.title{
+    font-size: 20px;
 }
 
 .mentor_text {
