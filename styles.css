@@ -48,7 +48,8 @@ body {
     }
     
     .card {
-        width: 80vw;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
@@ -60,7 +61,8 @@ body {
     }
     
     .card {
-        width: 60vw;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
@@ -71,17 +73,27 @@ body {
     }
     
     .card {
-        width: 40vw;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 992px){
     h1 {
         font-size: 57px;
     }
     
     .card {
-        width: 400px;
+    }
+
+    .left{
+        /*margin-left: 20vw;*/
+        margin-left: auto;
+        margin-right: 30px;
+    }
+    .right{
+        /*margin-left: 4vw;*/
+        margin-left: 30px;
     }
 }
 
@@ -117,14 +129,7 @@ h1 {
     text-align: center;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.left{
-    margin-left: 320px;
-}
-
-.right{
-    margin-left: 60px;
+    width: 400px;
 }
 
 .card img{
@@ -197,13 +202,6 @@ h1 {
 .blurb p{
     font-size: 19px;
     line-height: 1.1;
-}
-
-.card_grid{
-    display: grid;
-    grid-template-columns: 50vw 50vw;
-    grid-template-rows: auto;
-    justify-items: start;
 }
 
 /*nav bars*/
