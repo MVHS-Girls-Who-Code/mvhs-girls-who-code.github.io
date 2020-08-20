@@ -52,7 +52,6 @@ body {
         margin-left: auto;
         width: 90vw;
         border: 2px solid red;
-
     }
 }
 
@@ -66,6 +65,7 @@ body {
     .card {
         margin-right: auto;
         margin-left: auto;
+        width: 400px;
     }
 }
 
@@ -78,6 +78,7 @@ body {
     .card {
         margin-right: auto;
         margin-left: auto;
+        width: 400px;
     }
 }
 
@@ -87,6 +88,7 @@ body {
     }
     
     .card {
+        width: 400px;
     }
 
     .left{
@@ -131,8 +133,6 @@ h1 {
     margin-bottom: 10px;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 400px;
-    border: 2px solid blue;
 }
 
 .card img{
