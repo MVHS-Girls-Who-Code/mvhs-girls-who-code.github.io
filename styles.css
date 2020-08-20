@@ -50,6 +50,7 @@ body {
     .card {
         margin-right: auto;
         margin-left: auto;
+        width: 90vw;
     }
 }
 
