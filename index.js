@@ -21,6 +21,16 @@ window.onload = function() {
     }
 }
 
+//navbar collapse
+function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.className === "nav") {
+      x.className += " responsive";
+    } else {
+      x.className -= "responsive";
+    }
+}
+
 //animations
 var $hr_elements = $('.animation-hr');
 var $c_elements = $('.focus h1');
