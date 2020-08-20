@@ -40,9 +40,17 @@ body {
     justify-content: center;
 }
 
+@media only screen and (max-width: 400px){
+    .card{
+        margin-right: auto;
+        margin-left: auto;
+        width: 90vw;
+    }
+}
+
 /*phone screen*/
 
-@media only screen and (max-width: 657px) {
+/*@media only screen and (max-width: 657px) {
     h1 {
         font-size: 57px;
     }
@@ -51,13 +59,12 @@ body {
         margin-right: auto;
         margin-left: auto;
         width: 90vw;
-        border: 2px solid red;
     }
-}
+}*/
 
 /*tablet screen*/
 
-@media only screen and (max-width: 800px) and (min-width: 657px){  
+@media only screen and (max-width: 800px) and (min-width: 400px){  
     h1 {
         font-size: 57px;
     }
