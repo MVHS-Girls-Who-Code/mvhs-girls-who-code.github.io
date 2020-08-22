@@ -62,18 +62,6 @@ body {
         color: white;
     }
 
-    /* This part isn't really woring - I just found it on a website so...*/
-    .nav.responsive {position: relative;}
-    .nav.responsive a.icon{
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .nav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
 }
 
 /*tablet screen*/
@@ -89,26 +77,9 @@ body {
         width: 400px;
     }
 
-    .home-nav-link{
-        display: none;
-    }
-
     .icon{
         display: inline-block;
         color: white;
-    }
-
-    /* This part isn't really woring - I just found it on a website so...*/
-    .nav.responsive {position: relative;}
-    .nav.responsive a.icon{
-        position: fixed;
-        right: 0;
-        top: 0;
-    }
-    .nav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
     }
 }
 
@@ -162,6 +133,7 @@ h1 {
 .contact-nav-logo{
     width: 120px;
     height: 55px;
+    border-radius: 5px;
 }
 
 .officer-image {
@@ -190,7 +162,6 @@ h1 {
 }
 
 .banner {
-    width: 100vw;
     height: 425px;
     position: relative;
     display: block;
@@ -292,6 +263,116 @@ h1 {
 .home-nav-link:hover::before {
     transform: scaleX(1);
     visibility: visible;
+}
+
+/* responsive nav */
+.burger {
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: ease-in-out 250ms;
+}
+
+.nav-fixed {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+    width: 100%;
+    transform: translateY(0%);
+    background-color: #0d9c90;
+}
+
+.navlinks {
+    z-index: 2;
+}
+
+.nav-logo-responsive {
+    width: 120px;
+    height: 55px;
+    display: none;
+    border-radius: 5px;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 900px) {
+    .burger {
+        display: block;
+        padding-top: 8px;
+        position: absolute;
+        left: 30px;
+    }
+
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+        transition: ease-in-out 250ms;
+    }
+
+    .toggle .line2{
+        opacity: 0;
+        transition: ease-in-out 250ms;
+    }
+
+    .toggle .line3{
+        transform: rotate(+45deg) translate(-5px,-6px);
+        transition: ease-in-out 250ms;
+    }
+
+    .navlinks {
+        position: absolute;
+        padding-top: 0;
+        right: 0px;
+        top: 80px;
+        background-color:#e0f5f3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        transform: translateY(-150%);
+        transition: ease-in-out 300ms;
+        z-index: 1;
+    }
+    .nav-active {
+        transform: translateY(0%);
+        transition: ease-in-out 500ms;
+    }
+    .navlinks img {
+        display: none;
+    }
+
+    .nav ul li{
+        opacity: 0;
+        display: block;
+        color: black;
+    }
+
+    .nav ul li a {
+        color: black;
+    }
+    .home-nav-link::before {
+        background-color: black;
+    }
+    .nav-logo-responsive {
+        display: block;
+        z-index: 2;
+    }
 }
 
 /* index page */
