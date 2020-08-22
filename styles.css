@@ -35,64 +35,6 @@ body {
     justify-content: center;
 }
 
-/*phone screen*/
-
-@media only screen and (max-width: 400px) {
-    .card {
-        margin-right: auto;
-        margin-left: auto;
-        width: 90vw;
-    }
-}
-
-/*tablet screen*/
-
-@media only screen and (max-width: 800px) and (min-width: 400px) {
-    h1 {
-        font-size: 57px;
-    }
-
-    .card {
-        margin-right: auto;
-        margin-left: auto;
-        width: 400px;
-    }
-}
-
-/* small computers*/
-@media only screen and (max-width: 1200px) and (min-width: 800px) {
-    h1 {
-        font-size: 57px;
-    }
-
-    .card {
-        margin-right: auto;
-        margin-left: auto;
-        width: 400px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    h1 {
-        font-size: 57px;
-    }
-
-    .card {
-        width: 400px;
-    }
-
-    .left {
-        /*margin-left: 20vw;*/
-        margin-left: auto;
-        margin-right: 30px;
-    }
-
-    .right {
-        /*margin-left: 4vw;*/
-        margin-left: 30px;
-    }
-}
-
 p {
     font-size: 20px;
     margin-bottom: 0.5rem;
@@ -491,6 +433,7 @@ footer p {
         opacity: 0;
         display: block;
         color: black;
+        padding: 1vw;
     }
 
     .nav ul li a {
@@ -517,7 +460,73 @@ footer p {
     }
 
     .home-nav img {
-        width: 8vw;
-        height: 8vw;
+        width: 40px;
+        height: 40px;
+    }
+
+    .home-nav {
+        top: 60px;
+    }
+}
+
+/*phone screen*/
+
+@media only screen and (max-width: 400px) {
+    .card {
+        margin-right: auto;
+        margin-left: auto;
+        width: 90vw;
+    }
+
+    .home-banner img {
+        height: 50vh;
+    }
+}
+
+/*tablet screen*/
+
+@media only screen and (max-width: 800px) and (min-width: 400px) {
+    h1 {
+        font-size: 57px;
+    }
+
+    .card {
+        margin-right: auto;
+        margin-left: auto;
+        width: 400px;
+    }
+}
+
+/* small computers*/
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+    h1 {
+        font-size: 57px;
+    }
+
+    .card {
+        margin-right: auto;
+        margin-left: auto;
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 57px;
+    }
+
+    .card {
+        width: 400px;
+    }
+
+    .left {
+        /*margin-left: 20vw;*/
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+    .right {
+        /*margin-left: 4vw;*/
+        margin-left: 30px;
     }
 }
