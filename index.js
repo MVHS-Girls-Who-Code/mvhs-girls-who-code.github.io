@@ -86,7 +86,7 @@ $window.trigger('scroll');
 
 //responsive navbar
 const navSlide = () => {
-    if (sPage != "index" && sPage != "" && sPage != "index.html"){
+    if (sPage != "index" && sPage != "" && sPage != "index.html" || window.innerWidth <= 900){
         const burger = $('.burger')[0];
         const nav = $('.navlinks')[0];
         const navLinks = $('.navlinks li');

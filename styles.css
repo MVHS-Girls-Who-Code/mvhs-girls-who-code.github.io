@@ -372,6 +372,10 @@ footer p {
     height: 50px;
 }
 
+.home-responsive-nav {
+    display: none;
+}
+
 @keyframes navLinkFade {
     from {
         opacity: 0;
@@ -452,23 +456,17 @@ footer p {
         z-index: 2;
     }
 
-    .home-nav ul li {
-        display: inline;
-        opacity: 1;
-    }
-
-    .home-nav ul li a {
-        color: white;
-        font-size: 13px;
-    }
-
     .home-nav img {
         width: 4vw;
         height: 4vw;
     }
 
     .home-nav {
-        top: 60px;
+        display: none;
+    }
+
+    .home-responsive-nav {
+        display: contents;
     }
 }
 
