@@ -1,8 +1,8 @@
 //nav links load
+var sPath = window.location.pathname;
+var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
 window.onload = function() {
-    var sPath = window.location.pathname;
-    var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
-    if (sPage == "contact" || sPage == "projects") {
+    if (sPage == "contact" || sPage == "projects" || sPage == "contact.html" || sPage == "projects.html") {
         var $banner = $('.banner-img');
         var $bannerText = $('.not-in-view-fade')
         window.setTimeout(function() {
@@ -10,7 +10,7 @@ window.onload = function() {
             $bannerText.removeClass('not-in-view-fade');
             $bannerText.addClass('in-view-fade');
         }, 250);
-    } else if (sPage == "index" || sPage == "") {
+    } else if (sPage == "index" || sPage == "" || sPage == "index.html") {
         var $nav = $('.home-nav');
         window.setTimeout(function() {
             $nav.removeClass('hidden');
@@ -86,25 +86,27 @@ $window.trigger('scroll');
 
 //responsive navbar
 const navSlide = () => {
-    const burger = $('.burger')[0];
-    const nav = $('.navlinks')[0];
-    const navLinks = $('.navlinks li');
-
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
-
-        //Animate links
-        [...navLinks].forEach((link,index) => {
-            if( link.style.animation ){
-                link.style.animation = '';
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .5}s`;
-            }
+    if (sPage != "index" && sPage != "" && sPage != "index.html"){
+        const burger = $('.burger')[0];
+        const nav = $('.navlinks')[0];
+        const navLinks = $('.navlinks li');
+    
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+    
+            //Animate links
+            [...navLinks].forEach((link,index) => {
+                if( link.style.animation ){
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .5}s`;
+                }
+            });
+    
+            //Burger animation
+            burger.classList.toggle('toggle');
         });
-
-        //Burger animation
-        burger.classList.toggle('toggle');
-    });
+    }
 }
 
 navSlide();
