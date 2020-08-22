@@ -424,7 +424,6 @@ h1 {
 .home-banner img {
     display: block;
     height: auto;
-    max-height: 100vh;
     position: relative;
     width: 100%;
     min-width: 500px;
