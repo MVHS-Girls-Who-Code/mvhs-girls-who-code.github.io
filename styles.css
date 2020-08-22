@@ -147,12 +147,18 @@ h1 {
     width: 100vw;
 }
 
+.nav ul {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .nav ul li {
     color: white;
     display: inline;
     font-size: 20px;
     padding: 2vw;
     transition: ease-in-out .25s;
+    cursor: pointer;
 }
 
 .nav ul li a {
@@ -160,10 +166,6 @@ h1 {
     position: relative;
     text-decoration: none;
     transition: ease-in-out .25s;
-}
-
-.nav ul li {
-    cursor: pointer;
 }
 
 .home-nav-link::before {
@@ -214,7 +216,7 @@ h1 {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    z-index: 5;
+    z-index: 2;
 }
 
 .home-banner {
@@ -460,8 +462,8 @@ footer p {
     }
 
     .home-nav img {
-        width: 40px;
-        height: 40px;
+        width: 4vw;
+        height: 4vw;
     }
 
     .home-nav {
