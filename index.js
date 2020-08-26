@@ -1,9 +1,8 @@
 //nav links load
+var sPath = window.location.pathname;
+var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
 window.onload = function() {
-    var sPath = window.location.pathname;
-    var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
-    console.log(sPage);
-    if (sPage == "contact.html" || sPage == "project.html") {
+    if (sPage == "contact" || sPage == "projects" || sPage == "contact.html" || sPage == "projects.html") {
         var $banner = $('.banner-img');
         var $bannerText = $('.not-in-view-fade')
         window.setTimeout(function() {
@@ -11,23 +10,12 @@ window.onload = function() {
             $bannerText.removeClass('not-in-view-fade');
             $bannerText.addClass('in-view-fade');
         }, 250);
-    } else if (sPage == "index.html" || sPage == "") {
+    } else if (sPage == "index" || sPage == "" || sPage == "index.html") {
         var $nav = $('.home-nav');
-        console.log($nav);
         window.setTimeout(function() {
             $nav.removeClass('hidden');
             $nav.addClass('show');
         }, 500);
-    }
-}
-
-//navbar collapse
-function myFunction() {
-    var x = document.getElementById("nav");
-    if (x.className === "nav") {
-      x.className += " responsive";
-    } else {
-      x.className -= "responsive";
     }
 }
 
@@ -95,3 +83,30 @@ function check_if_in_view() {
 
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
+
+//responsive navbar
+const navSlide = () => {
+    if (sPage != "index" && sPage != "" && sPage != "index.html" || window.innerWidth <= 900){
+        const burger = $('.burger')[0];
+        const nav = $('.navlinks')[0];
+        const navLinks = $('.navlinks li');
+    
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+    
+            //Animate links
+            [...navLinks].forEach((link,index) => {
+                if( link.style.animation ){
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .5}s`;
+                }
+            });
+    
+            //Burger animation
+            burger.classList.toggle('toggle');
+        });
+    }
+}
+
+navSlide();

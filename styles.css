@@ -5,15 +5,18 @@
     text-align: center;
 }
 
-.background-white, .background-white div{
+.background-white,
+.background-white div {
     background-color: white;
 }
 
-.background-teal, .background-teal div{
+.background-teal,
+.background-teal div {
     background-color: #e0f5f3;
 }
 
-.background-teal .background-light-teal, .background-teal .background-light-teal div{
+.background-teal .background-light-teal,
+.background-teal .background-light-teal div {
     background-color: #f1fdfb;
 }
 
@@ -21,19 +24,7 @@ body {
     overflow-x: hidden;
 }
 
-.contact-nav{
-    background-color: #0d9c90;
-}
-
-.contact-nav-logo{
-    border-radius: 5%;
-}
-
-.icon{
-    display:none
-}
-
-.officer-image{
+.officer-image {
     border-radius: 50%;
 }
 
@@ -42,107 +33,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-/*phone screen*/
-
-@media only screen and (max-width: 400px){
-    .card{
-        margin-right: auto;
-        margin-left: auto;
-        width: 90vw;
-    }
-
-    .home-nav-link{
-        display: none;
-    }
-    
-    .icon{
-        display: inline-block;
-        color: white;
-    }
-
-    /* This part isn't really woring - I just found it on a website so...*/
-    .nav.responsive {position: relative;}
-    .nav.responsive a.icon{
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .nav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
-
-/*tablet screen*/
-
-@media only screen and (max-width: 800px) and (min-width: 400px){  
-    h1 {
-        font-size: 57px;
-    }
-    
-    .card {
-        margin-right: auto;
-        margin-left: auto;
-        width: 400px;
-    }
-
-    .home-nav-link{
-        display: none;
-    }
-
-    .icon{
-        display: inline-block;
-        color: white;
-    }
-
-    /* This part isn't really woring - I just found it on a website so...*/
-    .nav.responsive {position: relative;}
-    .nav.responsive a.icon{
-        position: fixed;
-        right: 0;
-        top: 0;
-    }
-    .nav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
-
-/* small computers*/
-@media only screen and (max-width: 1200px) and (min-width: 800px){   
-    h1 {
-        font-size: 57px;
-    }
-    
-    .card {
-        margin-right: auto;
-        margin-left: auto;
-        width: 400px;
-    }
-}
-
-@media only screen and (min-width: 992px){
-    h1 {
-        font-size: 57px;
-    }
-    
-    .card {
-        width: 400px;
-    }
-
-    .left{
-        /*margin-left: 20vw;*/
-        margin-left: auto;
-        margin-right: 30px;
-    }
-    .right{
-        /*margin-left: 4vw;*/
-        margin-left: 30px;
-    }
 }
 
 p {
@@ -154,14 +44,15 @@ h1 {
     font-size: 60px;
 }
 
-.contact-nav{
+.contact-nav {
     padding-top: 14px;
     height: 80px;
 }
 
-.contact-nav-logo{
+.contact-nav-logo {
     width: 120px;
     height: 55px;
+    border-radius: 5px;
 }
 
 .officer-image {
@@ -178,7 +69,7 @@ h1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card img{
+.card img {
     margin-right: auto;
     margin-left: auto;
 }
@@ -190,7 +81,6 @@ h1 {
 }
 
 .banner {
-    width: 100vw;
     height: 425px;
     position: relative;
     display: block;
@@ -231,21 +121,21 @@ h1 {
     transition: 1s ease-in-out;
 }
 
-.contact_text{
+.contact_text {
     padding-top: 20px;
     margin-bottom: 0px;
 }
 
-.section{
+.section {
     padding-bottom: 40px;
     padding-top: 40px;
 }
 
-.blurb{
+.blurb {
     padding: 10px;
 }
 
-.blurb p{
+.blurb p {
     font-size: 19px;
     line-height: 1.1;
 }
@@ -257,12 +147,18 @@ h1 {
     width: 100vw;
 }
 
+.home-nav ul {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .nav ul li {
     color: white;
     display: inline;
     font-size: 20px;
     padding: 2vw;
     transition: ease-in-out .25s;
+    cursor: pointer;
 }
 
 .nav ul li a {
@@ -272,11 +168,25 @@ h1 {
     transition: ease-in-out .25s;
 }
 
-.nav ul li {
-    cursor: pointer;
+.home-nav-link::before {
+    background-color: white;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    width: 100%;
 }
 
-.home-nav-link::before {
+.nav-link-underline:hover::before {
+    transform: scaleX(1);
+    visibility: visible;
+}
+
+.nav-link-underline::before {
     background-color: white;
     bottom: 0;
     content: "";
@@ -294,10 +204,14 @@ h1 {
     visibility: visible;
 }
 
+.contact-nav {
+    background-color: #0d9c90;
+}
+
 /* index page */
 
-.home-nav{
-    top: 7vw;
+.home-nav {
+    top: 8vw;
     display: inline-flex;
     left: 50%;
     position: absolute;
@@ -314,9 +228,8 @@ h1 {
 .home-banner img {
     display: block;
     height: auto;
-    max-height: 100vh;
     position: relative;
-    width: 100%;
+    width: 100vw;
 }
 
 .hidden {
@@ -415,4 +328,206 @@ footer p {
     font-size: 12px;
     padding-bottom: 10vh;
     padding-top: 10vh;
+}
+
+/* responsive nav */
+
+.burger {
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: ease-in-out 250ms;
+}
+
+.nav-fixed {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+    width: 100%;
+    transform: translateY(0%);
+    background-color: #0d9c90;
+}
+
+.navlinks {
+    z-index: 2;
+}
+
+.nav-logo-responsive {
+    width: 120px;
+    height: 55px;
+    display: none;
+    border-radius: 5px;
+}
+
+.home-nav img {
+    width: 50px;
+    height: 50px;
+}
+
+.home-responsive-nav {
+    display: none;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 900px) {
+    .burger {
+        display: block;
+        padding-top: 8px;
+        position: absolute;
+        left: 30px;
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+        transition: ease-in-out 250ms;
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+        transition: ease-in-out 250ms;
+    }
+
+    .toggle .line3 {
+        transform: rotate(+45deg) translate(-5px, -6px);
+        transition: ease-in-out 250ms;
+    }
+
+    .navlinks {
+        position: absolute;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        right: 0px;
+        top: 80px;
+        background-color: #e0f5f3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        transform: translateY(-150%);
+        transition: ease-in-out 300ms;
+        z-index: 1;
+    }
+
+    .nav-active {
+        transform: translateY(0%);
+        transition: ease-in-out 500ms;
+    }
+
+    .navlinks img {
+        display: none;
+    }
+
+    .nav ul li {
+        opacity: 0;
+        display: block;
+        color: black;
+        padding: 1vw;
+    }
+
+    .nav ul li a {
+        color: black;
+    }
+
+    .nav-link-underline::before {
+        background-color: black;
+    }
+
+    .nav-logo-responsive {
+        display: block;
+        z-index: 2;
+    }
+
+    .home-nav img {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .home-nav {
+        display: none;
+    }
+
+    .home-responsive-nav {
+        display: contents;
+    }
+}
+
+/*phone screen*/
+
+@media only screen and (max-width: 400px) {
+    .card {
+        margin-right: auto;
+        margin-left: auto;
+        width: 90vw;
+    }
+
+    .home-banner img {
+        height: 50vh;
+    }
+}
+
+/*tablet screen*/
+
+@media only screen and (max-width: 800px) and (min-width: 400px) {
+    h1 {
+        font-size: 57px;
+    }
+
+    .card {
+        margin-right: auto;
+        margin-left: auto;
+        width: 400px;
+    }
+}
+
+/* small computers*/
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+    h1 {
+        font-size: 57px;
+    }
+
+    .card {
+        margin-right: auto;
+        margin-left: auto;
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 57px;
+    }
+
+    .card {
+        width: 400px;
+    }
+
+    .left {
+        /*margin-left: 20vw;*/
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+    .right {
+        /*margin-left: 4vw;*/
+        margin-left: 30px;
+    }
 }
