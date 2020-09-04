@@ -2,7 +2,7 @@
 var sPath = window.location.pathname;
 var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
 window.onload = function() {
-    if (sPage == "contact" || sPage == "projects" || sPage == "contact.html" || sPage == "projects.html") {
+    if (sPage == "contact" || sPage == "projects" || sPage == "contact.html" || sPage == "projects.html" || sPage == "announcements.html" || sPage == "announcements.html") {
         var $banner = $('.banner-img');
         var $bannerText = $('.not-in-view-fade')
         window.setTimeout(function() {
