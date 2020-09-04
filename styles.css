@@ -44,6 +44,8 @@ h1 {
     font-size: 60px;
 }
 
+/* contact page*/
+
 .contact-nav {
     padding-top: 14px;
     height: 80px;
@@ -102,16 +104,19 @@ h1 {
 .contact-banner {
     background: url("Assets/contactbanner.jpg");
     background-position: center;
+    background-size: cover;
 }
 
 .project-banner {
     background: url("Assets/projectbanner.jpg");
     background-position: center;
+    background-size: cover;
 }
 
 .announcements-banner {
-    background: url("Assets/announcementsbanner.jpg");
+    background: url("Assets/announcementsbanner.jpeg");
     background-position: center;
+    background-size: cover;
 }
 
 .banner h1 {
