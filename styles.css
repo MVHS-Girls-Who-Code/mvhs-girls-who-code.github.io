@@ -144,6 +144,9 @@ h1 {
 
 .blurb {
     padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 200px;
 }
 
 .blurb p {
