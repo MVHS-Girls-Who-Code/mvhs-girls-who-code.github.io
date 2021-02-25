@@ -406,6 +406,10 @@ footer p {
     font-size: 18px;
 }
 
+.announcement-text{
+    text-align: left;
+}
+
 
 /* responsiveness */
 
@@ -562,5 +566,10 @@ footer p {
     .right {
         /*margin-left: 4vw;*/
         margin-left: 30px;
+    }
+
+    .center{
+        margin-right: auto;
+        margin-left: auto;
     }
 }
