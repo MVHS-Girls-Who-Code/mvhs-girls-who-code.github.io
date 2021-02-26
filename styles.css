@@ -411,10 +411,19 @@ footer p {
     text-align: left;
 }
 
-/* personal website boxes */
+/* personal website */
+.personal-website-title {
+    padding-top: 10vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.personal-website-title h4 {
+    padding-bottom: 5vh;
+}
+
 #personal-website-gallery {
     justify-content: space-around;
-    padding-top: 5vh;
     padding-bottom: 5vh;
     padding-left: 15vw;
     padding-right: 15vw;
