@@ -2,7 +2,14 @@
 var sPath = window.location.pathname;
 var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
 window.onload = function() {
-    if (sPage == "contact" || sPage == "projects" || sPage == "contact.html" || sPage == "projects.html" || sPage == "announcements.html" || sPage == "announcements") {
+    if (sPage == "index" || sPage == "" || sPage == "index.html") {
+        var $nav = $('.home-nav');
+        window.setTimeout(function() {
+            $nav.removeClass('hidden');
+            $nav.addClass('show');
+        }, 500);
+    }
+    else {
         var $banner = $('.banner-img');
         var $bannerText = $('.not-in-view-fade')
         window.setTimeout(function() {
@@ -10,12 +17,6 @@ window.onload = function() {
             $bannerText.removeClass('not-in-view-fade');
             $bannerText.addClass('in-view-fade');
         }, 250);
-    } else if (sPage == "index" || sPage == "" || sPage == "index.html") {
-        var $nav = $('.home-nav');
-        window.setTimeout(function() {
-            $nav.removeClass('hidden');
-            $nav.addClass('show');
-        }, 500);
     }
 }
 
