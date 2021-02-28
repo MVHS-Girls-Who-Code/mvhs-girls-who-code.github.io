@@ -83,6 +83,7 @@ h1 {
     text-align: center;
 }
 
+/* banners */
 .banner {
     height: 425px;
     position: relative;
@@ -288,7 +289,7 @@ h1 {
 }
 
 .focus {
-    background-color: #e0f5f3;
+    background-color: #e4fdfc;
     padding-bottom: 20vh;
     padding-left: 10vw;
     padding-right: 10vw;
@@ -325,7 +326,7 @@ h1 {
 }
 
 .join {
-    background-color: #e0f5f3;
+    background-color: #e4fdfc;
     padding-bottom: 20vh;
     padding-left: 10vw;
     padding-right: 10vw;
@@ -339,7 +340,7 @@ footer {
 }
 
 footer p {
-    font-size: 12px;
+    font-size: 14px;
     padding-bottom: 10vh;
     padding-top: 10vh;
 }
@@ -390,7 +391,7 @@ footer p {
     display: none;
 }
 
-/* announcements/projects */
+/* announcements and projects */
 .listed-content {
     margin-left: 20vw;
     margin-right: 20vw;
@@ -410,6 +411,71 @@ footer p {
     text-align: left;
 }
 
+/* personal website */
+.personal-website-title {
+    padding-top: 10vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.personal-website-title h4 {
+    padding-bottom: 5vh;
+}
+
+#personal-website-gallery {
+    justify-content: space-around;
+    padding-bottom: 5vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+#personal-website-gallery img{
+    width: 350px;
+    height: 225px;
+    margin-top: 15px;
+}
+
+#personal-website-gallery h3 {
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+#personal-website-gallery .box{
+    width: 400px;
+    background-color: #e4fdfc;
+    margin: 20px 10px;
+    padding-bottom: 25px;
+}
+
+#personal-website-gallery a {
+    color: white;
+    background-color: #0d9c90;
+    transform: translate(-172%, 225%);
+    position: absolute;
+    transition: .5s ease;
+    opacity: 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    width: 140px;
+    height: 47px;
+    padding-top: 7px;
+    border-radius: 5%;
+}
+
+#personal-website-gallery .box:hover img {
+  opacity: 0.7;
+  transition: 0.5s ease;
+}
+
+#personal-website-gallery .box:hover a {
+  opacity: 1;
+}
+
+#personal-website-gallery a:hover {
+  color: black;
+  background-color: white;
+}
 
 /* responsiveness */
 
