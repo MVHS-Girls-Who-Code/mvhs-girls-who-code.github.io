@@ -411,6 +411,10 @@ footer p {
     text-align: left;
 }
 
+.announcement-title{
+    padding-top: 20px;
+}
+
 /* personal website */
 .personal-website-title {
     padding-top: 10vh;
