@@ -121,6 +121,12 @@ h1 {
     background-size: cover;
 }
 
+.join-banner {
+    background: url("Assets/joinbanner.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
 .banner h1 {
     color: white;
     font-size: 70px;
