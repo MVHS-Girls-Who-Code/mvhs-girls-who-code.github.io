@@ -134,12 +134,6 @@ h1 {
     background-size: cover;
 }
 
-.join-banner {
-    background: url("Assets/joinbanner.jpeg");
-    background-position: center;
-    background-size: cover;
-}
-
 .banner h1 {
     color: white;
     font-size: 70px;
@@ -342,15 +336,6 @@ h1 {
 .home-heading {
     color: #ed5139;
     font-size: 7vh;
-}
-
-.join {
-    background-color: #e4fdfc;
-    padding-bottom: 20vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 20vh;
-    text-align: center;
 }
 
 footer {
