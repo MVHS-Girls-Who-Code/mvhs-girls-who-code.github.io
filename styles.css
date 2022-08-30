@@ -44,6 +44,19 @@ h1 {
     font-size: 60px;
 }
 
+.button {
+    background-color: #ed5139;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px #49c5ff;
+  }
+
 /* contact page*/
 
 .contact-nav {
